@@ -8,19 +8,21 @@
     <link href="./index.css" rel="stylesheet" type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 	<title>Hackaton</title>
 </head>
 
 <body>
-    <nav class="navbar text-bg-secondary cabeza">
+    <nav class="navbar text-bg-secondary bg-primary cabeza">
         <div class="container-fluid">
           <a class="navbar-brand texto" href="#">
-            logo  ALTOKEN?
+            <img src="https://dummyimage.com/100x50/000/fff.png&amp;text=logo" alt="">
+            ALTOKEN?
           </a>
         </div>
-        <div class="wallet">
-            <button type="button" class="btn btn-outline-dark btn-lg go-wallet"><img src="https://img.icons8.com/external-sbts2018-outline-color-sbts2018/58/000000/external-wallet-basic-ui-elements-2.3-sbts2018-outline-color-sbts2018.png"/></button>
-        </div>
+        <form class="d-flex">
+            <button class="btn btn-outline-dark connect-wallet" type="submit">Connect Wallet</button>
+        </form>
     </nav>
 
     <div class="contenedor">
@@ -28,7 +30,12 @@
             <h1>"............" la formade de  blablablabla para poder "......" de manera blablablaba gracias totales</h1>
         </div>
 
-        <button type="button" class="market-place btn btn-outline-dark btn-lg">Market Place</button>
+        <button type="button" class="btn btn-outline-dark btn-lg" onclick="goOtherView()">Market Place</button>
     </div>
-
+    <h1></h1>
+    <script>
+        function goOtherView(){
+            location.href = "../views/creator-view/market-place/market-place-view.html";
+        }
+    </script>
 </body>

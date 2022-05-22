@@ -1,18 +1,16 @@
-
 .cabeza {
-    height: 80px;
+    height: 75px;
 }
 
-
+.connect-wallet {
+    position: absolute;
+    top: 19px;
+    right: 12px;
+}
 .contenedor {
     position: absolute;
     top: 40%;
     left: 12%;
-}
-
-.wallet {
-    position: absolute;
-    right: 2%;
 }
 
 .text {
