@@ -1,6 +1,12 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../containers/Layout";
+import { Web3ReactProvider } from "@web3-react/core";
+import Web3 from "web3";
+
+function getLibrary(provider) {
+	return new Web3(provider);
+}
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -14,9 +20,11 @@ function MyApp({ Component, pageProps }) {
 				<meta charSet="UTF-8" />
 				<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
 			</Head>
-			<Layout>
-				<Component {...pageProps} />;
-			</Layout>
+			<Web3ReactProvider getLibrary={getLibrary}>
+				<Layout>
+					<Component {...pageProps} />;
+				</Layout>
+			</Web3ReactProvider>
 		</>
 	);
 }
