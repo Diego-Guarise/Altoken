@@ -6,7 +6,6 @@ import { useWeb3React } from "@web3-react/core";
 
 const Menu = () => {
 	const [show, setShow] = useState(false);
-	
 
 	const {
 		active,
@@ -92,6 +91,11 @@ const Menu = () => {
 									<a className="nav-link active">Market</a>
 								</Link>
 							</li>
+							<li className="nav-item">
+								<Link aria-current="page" href="/balance">
+									<a className={active ? "nav-link active" : "nav-link d-none"}>Balance</a>
+								</Link>
+							</li>
 						</ul>
 						<ul className="navbar-nav mb-2 mb-lg-0">
 							{active ? (
@@ -124,7 +128,6 @@ const Menu = () => {
 					</div>
 				</div>
 			</nav>
-		
 		</>
 	);
 };
