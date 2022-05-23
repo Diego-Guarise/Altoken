@@ -6,12 +6,7 @@ import { useWeb3React } from "@web3-react/core";
 
 const Menu = () => {
 	const [show, setShow] = useState(false);
-
-	const fetcher = (library) => (...args) => {
-		const [method, ...params] = args;
-		console.log(method, params)
-		return library[method](...params);
-	}
+	
 
 	const {
 		active,
@@ -105,7 +100,7 @@ const Menu = () => {
 								</li>
 							) : (
 								<li className="nav-link">No conectado</li>
-							)}{" "}
+							)}
 						</ul>
 						<div className="d-flex">
 							{active ? (
@@ -114,8 +109,7 @@ const Menu = () => {
 									className="btn btn-outline-dark"
 									type="sumbit"
 								>
-									{" "}
-									Disconnect{" "}
+									Disconnect
 								</button>
 							) : (
 								<button
@@ -130,6 +124,7 @@ const Menu = () => {
 					</div>
 				</div>
 			</nav>
+		
 		</>
 	);
 };
