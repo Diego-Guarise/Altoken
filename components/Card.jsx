@@ -21,7 +21,7 @@ export const Card = props => {
 					<p className="card-text">
 						{props.description}
 					</p>
-					<a href="#" className="btn btn-primary" onClick={() => handleClick(props.id)}>
+					<a className="btn btn-primary" onClick={() => handleClick(props.id)}>
 						BUY
 					</a>
 				</div>

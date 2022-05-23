@@ -4,11 +4,12 @@ const NftContext = createContext();
 
 function NftProvider(props) {
 	const [showNft, setShowNft] = useState(false);
-	const [currentCard, setCurrentCard] = useState(0);
+	const [currentCard, setCurrentCard] = useState(-1);
 
 	const handleClick = (id) => {
 		setShowNft(!showNft);
 		setCurrentCard(id);
+		console.log(currentCard);
 	}
 
 	return (

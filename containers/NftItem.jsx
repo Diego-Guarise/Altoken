@@ -1,22 +1,25 @@
-import React from "react";
-import { NftProvider } from "../context/nftContext";
+import React, { useContext } from "react";
+import { NftContext } from "../context/nftContext";
 
+const NftItem = (props) => {
+	const { handleClick } = useContext(NftContext);
 
-const NftItem = () => {
 	return (
 		<div>
 			<div className="nft">
 				<div className="nftprimary">
 					<img
 						className="nftimage"
-						src="https://dummyimage.com/600x400/828282/ffffff&text=NFT"
+						src={props.cards[props.id - 1].src}
 					/>
 					<div className="nftinfo">
 						<br />
-						<h2 className="nftname">Name #11111</h2>
+						<h2 className="nftname">
+							{props.cards[props.id - 1].title}
+						</h2>
 						<br />
 						<h3 className="nftdescription">
-							Description - location
+							{props.cards[props.id - 1].description}
 						</h3>
 					</div>
 				</div>
@@ -38,7 +41,6 @@ const NftItem = () => {
 				<img
 					className="img2"
 					src="https://dummyimage.com/600x400/828282/ffffff&text=NFT+2"
-					
 				/>
 				<div className="nftinfo2">
 					<h2 className="nftname">NFT Name</h2>
@@ -68,6 +70,14 @@ const NftItem = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="d-flex justify-center">
+				<button
+					className="btn btn-dark"
+					onClick={() => handleClick(-1)}
+				>
+					VOLVER
+				</button>
 			</div>
 		</div>
 	);
