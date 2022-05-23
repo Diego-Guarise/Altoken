@@ -1,0 +1,108 @@
+.connect-wallet {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.nft {
+    border-bottom: 2px solid #808080;
+    height: 160px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.nftprimary {
+    position: absolute;
+    top: 155px;
+    width: 700px;
+    height: 140px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+}
+
+.nftimage {
+    position: absolute;
+    height: 140px;
+    border-radius: 15px;
+}
+
+.nftinfo {
+    position: fixed;
+    font-size: 5px;
+    left: 35%;
+}
+
+.fractional1 {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    left: 0%;
+    
+    border-right: #808080 solid 2px;
+}
+
+.img1 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.nftinfo1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.properties {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+}
+
+.fractional2 {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    left: 50%;
+
+    border-left: #808080 solid 2px;
+}
+
+.img2 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    width: 60%;
+    border-radius: 15px;
+}
+
+.nftinfo2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+.propities {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+}
+
