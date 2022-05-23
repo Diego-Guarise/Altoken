@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState, useContext } from "react";
 import Image from "next/image";
+import NftItem from "../containers/NftItem";
+import { NftContext } from "../context/nftContext";
 
 export const Card = props => {
-	return (
+	const { showNft, handleClick } = useContext(NftContext);
+
+	return (<>
 		<div className="column mb-2">
 			<div className="card" style={{ width: "18rem" }}>
 				<Image
@@ -17,12 +21,13 @@ export const Card = props => {
 					<p className="card-text">
 						{props.description}
 					</p>
-					<a href="#" className="btn btn-primary">
+					<a href="#" className="btn btn-primary" onClick={() => handleClick(props.id)}>
 						BUY
 					</a>
 				</div>
 			</div>
 		</div>
+		</>
 	);
 };
 

@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useContext } from "react";
 import CardContainer from "../containers/CardContainer";
+import { NftProvider } from "../context/nftContext";
 
 const marketplace = () => {
 	return (
 		<>
-			<CardContainer />
+			<NftProvider>
+				<CardContainer />
+			</NftProvider>
 		</>
 	);
 };

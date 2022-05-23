@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/nft.css";
 import Head from "next/head";
 import Layout from "../containers/Layout";
 import { Web3ReactProvider } from "@web3-react/core";

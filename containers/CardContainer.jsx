@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../components/Card";
+import { NftContext } from "../context/nftContext";
+import NftItem from "./NftItem";
 
 const cards = [
 	{ id: 1, title: "Card 1", description: "Card 1 description", src:"https://dummyimage.com/500x250/aa4a44.png&text=NFT 1" },
@@ -13,7 +15,10 @@ const cards = [
 ];
 
 const CardContainer = () => {
-	return (
+
+	const { showNft, currentCard } = useContext(NftContext);
+
+	return ((currentCard > 0) ? <NftItem /> :
 		<div className="container-fluid">
 			<div className="d-flex p-2 flex-wrap justify-content-around">
 				{cards.map((card) => (
