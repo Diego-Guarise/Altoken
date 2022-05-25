@@ -271,7 +271,7 @@ body{
     }
 
     .featured .heading{
-        text-align:center;
+        text-align: center;
     }
     .featured .cards{
         margin:5em 0;
@@ -402,6 +402,7 @@ body{
         gap:1.5em;
     }
 
+
     .artists, .trial{
         text-align:center;
     }
@@ -413,7 +414,7 @@ body{
 
     .artists .cards{
         margin:6em 0 4em 0;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
     }
 
     .artists .card{
@@ -426,6 +427,7 @@ body{
         position:relative;
         padding:7em 1em 1em 1em;
         max-width:16em;
+        width: 100%;
        }
 
     .artists .bg-img{
@@ -447,10 +449,6 @@ body{
 
     .artists .card p{
         margin:1em 0 1.5em 0;
-    }
-
-    .stars{
-        color:#ffb92d;
     }
 
     .card-btn{
